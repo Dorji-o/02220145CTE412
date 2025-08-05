@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<students>
+    <student id="1">
+        <name>Dorji Wangmo</name>
+        <stdID>02220145</stdID>
+        <Program>BE IT</Program>
+    </student>
+    <student id="2">
+        <name>Choki Wangmo</name>
+        <stdID>02220138</stdID>
+        <Program>BE IT</Program>
+    </student>
+    <student id="3">
+        <name>Cassie</name>
+        <stdID>02220139</stdID>
+        <Program>Architecture</Program>
+    </student>
+</students>    
