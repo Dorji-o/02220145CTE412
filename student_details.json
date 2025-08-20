@@ -1,0 +1,24 @@
+{
+    "students": [
+        {
+            "name": "Dorji Wangmo",
+            "age": "21",
+            "address": "Haa"
+        },
+        {
+            "name": "Yeshi Choden",
+            "age": "20",
+            "address": "Haa"
+        },
+        {
+            "name": "Cassie",
+            "age": "22",
+            "address": "Pheuntsholing"
+        },
+        {
+            "name": "Karma",
+            "age": "23",
+            "address": "Australia"
+        }
+    ]
+}
