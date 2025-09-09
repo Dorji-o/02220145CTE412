@@ -1,7 +1,7 @@
 import json
 import os
 
-FILENAME = r"Lab2/student_details.json"
+FILENAME = "student_details.json"
 
 def read_data():
     if not os.path.exists(FILENAME):

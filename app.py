@@ -17,17 +17,16 @@ def home():
 # GET all students with Cache-Control & ETag
 @app.route("/students", methods=["GET"])
 def get_students():
-    # Create a simple ETag based on students list
+    
     students_str = str(students).encode()
     etag = hashlib.sha1(students_str).hexdigest()
 
-    # Check if client sent If-None-Match header
     if request.headers.get("If-None-Match") == etag:
         return "", 304  # Not Modified
 
     # Build response
     response = make_response(jsonify(students), 200)
-    response.headers["Cache-Control"] = "public, max-age=60"  # cache for 60 seconds
+    response.headers["Cache-Control"] = "public, max-age=60"  
     response.headers["ETag"] = etag
     return response
 
@@ -83,9 +82,8 @@ def delete_student(student_id):
     students = [s for s in students if s["id"] != student_id]
     return jsonify({"message": "Student deleted"}), 200
 
-# -------------------------
 # HEAD & OPTIONS
-# -------------------------
+
 @app.route("/students", methods=["HEAD"])
 def head_students():
     return "", 200
